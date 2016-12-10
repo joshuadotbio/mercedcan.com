@@ -8,7 +8,7 @@ start_time: '7:00 pm'
 end_time: '9:00 pm'
 location: 'Merced Multicultural Arts Center (645 W Main St, Merced, CA 95340)'
 host: MercedCAN
-facebook_url:
+facebook_url: 'https://www.facebook.com/events/1774726409447053/'
 ---
 
 
