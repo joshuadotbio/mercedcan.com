@@ -2,19 +2,26 @@ body {
   background: grey;
 }
 
+.splash-wrapper {
+  height: 300px;
+}
+
+.countdown-wrapper {
+  background: yellow;
+}
+
 .countdown {
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
-  background: white;
   color: white;
 
   &.past {
-    color: black;
+    color: #777;
   }
 
   &.future {
-    color: red;
+    color: black;
   }
 }
 
@@ -65,4 +72,8 @@ body {
     font-weight: bold;
     margin-top: 0;
   }
+}
+
+.event-content-buttons {
+  margin-top: 0.5em;
 }

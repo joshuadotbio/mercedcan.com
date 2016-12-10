@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<div id="splash" class="splash-wrapper">
+  <script>
+    if($(window).height() > 500) {
+      $('.splash-wrapper').height($(window).height()*0.8);
+    }
+  </script>
+</div>
 <div id="countdowns" class="countdown-wrapper">
   <div class="row">
     <div id="countdown-election" class="countdown past small-4 medium-4 columns">
@@ -38,10 +45,17 @@ layout: default
         <div class="event-date-month">{{ event.event_date | date: "%b" }}</div>
         <div class="event-date-day">{{ event.event_date | date: "%-d" }}</div>
       </div>
-      <article class="event-content">
-        <h2>{{ event.title }}</h2>
-        {{ event.excerpt }}
-      </article>
+      <div class="event-content">
+        <article>
+          <h2>{{ event.title }}</h2>
+          {{ event.excerpt }}
+        </article>
+        <div class="event-content-buttons">
+          {% if event.facebook_event_url %}
+          <a href="{{ event.facebook_event_url }}" class="button"><i class="fa fa-facebook"></i> Facebook Event</a>
+          {% endif %}
+        </div>
+      </div>
     </div>
     {% endfor %}
   </div>

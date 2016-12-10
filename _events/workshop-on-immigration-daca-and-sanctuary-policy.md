@@ -1,8 +1,8 @@
 ---
 layout: event
 title: 'Workshop on Immigration, DACA, and Sanctuary Policy'
-excerpt: "Many organizations in Merced have been deeply involved in supporting immigrant rights for years. If you want to become an ally and join the effort to protect the undocumented people in our community, this workshop will get you started. If you're already involved in the effort, this is a chance to connect with like-minded people."
-seo_description: "If you want to become an ally and join the effort to protect the undocumented people in our community, this workshop will get you started. If you're already involved in the effort, this is a chance to connect with like-minded people."
+excerpt: "If you want to join the effort to protect the undocumented people in our community, this workshop will get you started. If you're already involved in the effort, this is a chance to connect with like-minded people."
+seo_description: "If you want to join the effort to protect the undocumented people in our community, this workshop will get you started. If you're already involved in the effort, this is a chance to connect with like-minded people."
 event_date: 2016-12-15 00:00:00
 start_time: '7:00 pm'
 end_time: '9:00 pm'
