@@ -8,5 +8,5 @@ start_time:
 end_time:
 location:
 host: MercedCAN
-facebook_url:
+facebook_event_url:
 ---
