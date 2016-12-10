@@ -1,0 +1,24 @@
+.countdown {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  background: white;
+  color: white;
+
+  &.past {
+    color: red;
+  }
+
+  &.future {
+    color: green;
+  }
+}
+
+.countdown__days {
+  font-size: 2em;
+}
+
+.countdown__description {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}

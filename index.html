@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="row">
+  <div id="countdown-election" class="countdown past small-4 medium-4 columns">
+    <div class="countdown__days"></div>
+    <div class="countdown__description">Days since election</div>
+  </div>
+  <div id="countdown-inauguration" class="countdown future small-4 medium-4 columns">
+    <div class="countdown__days"></div>
+    <div class="countdown__description">Days until inaugration</div>
+  </div>
+  <div id="countdown-midterm" class="countdown future small-4 medium-4 columns">
+    <div class="countdown__days"></div>
+    <div class="countdown__description">Days until midterms</div>
+  </div>
+</div>
+<script>
+  var election_date = moment("{{site.countdown.election_date}}");
+  var inauguration_date = moment("{{site.countdown.inauguration_date}}");
+  var midterm_date = moment("{{site.countdown.midterm_date}}");
+
+  var diff_election = moment().diff(election_date, 'days');
+  var diff_inauguration = -1 * moment().diff(inauguration_date, 'days');
+  var diff_midterm = -1 * moment().diff(midterm_date, 'days');
+
+  $("#countdown-election .countdown__days").text(diff_election);
+  $("#countdown-inauguration .countdown__days").text(diff_inauguration);
+  $("#countdown-midterm .countdown__days").text(diff_midterm);
+</script>
