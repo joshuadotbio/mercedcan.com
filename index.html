@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="countdown-wrapper">
+<div id="countdowns" class="countdown-wrapper">
   <div class="row">
     <div id="countdown-election" class="countdown past small-4 medium-4 columns">
       <div class="countdown-days"></div>
@@ -28,5 +28,20 @@ layout: default
       $("#countdown-inauguration .countdown__days").text(diff_inauguration);
       $("#countdown-midterm .countdown__days").text(diff_midterm);
     </script>
+  </div>
+</div>
+<div id="events" class="event-wrapper">
+  <div class="row">
+    {% for event in site.events %}
+    <div class="event small-12 medium-6 columns">
+      <div class="event-date">
+        <div class="event-date-month">{{ event.event_date | date: "%b" }}</div>
+        <div class="event-date-day">{{ event.event_date | date: "%-d" }}</div>
+      </div>
+      <article class="event-content">
+        <h2>{{ event.title }}</h2>
+      </article>
+    </div>
+    {% endfor %}
   </div>
 </div>

@@ -22,3 +22,38 @@
   text-transform: uppercase;
   font-size: 0.8em;
 }
+
+.event {
+  display: table;
+}
+
+.event-date {
+  display: table-cell;
+  vertical-align: top;
+  width: 60px;
+  text-align: center;
+  background: grey;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.event-date-day {
+  font-size: 2em;
+  line-height: 1;
+  margin: 0;
+}
+
+.event-content {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0;
+  }
+}
