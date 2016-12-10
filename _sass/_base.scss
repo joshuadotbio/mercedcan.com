@@ -1,5 +1,5 @@
 body {
-  background: grey;
+  background: #ddd;
 }
 
 .countdown-wrapper {
@@ -28,6 +28,13 @@ body {
 .countdown-description {
   text-transform: uppercase;
   font-size: 0.8em;
+}
+
+.section-title {
+  h2 {
+    font-weight: bold;
+    margin-top: 1em;
+  }
 }
 
 .event {
