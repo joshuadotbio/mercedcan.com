@@ -1,3 +1,7 @@
+body {
+  background: grey;
+}
+
 .countdown {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -25,20 +29,25 @@
 
 .event {
   display: table;
+  background: white;
 }
 
 .event-date {
   display: table-cell;
   vertical-align: top;
-  width: 60px;
+  width: 50px;
   text-align: center;
-  background: grey;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
+.event-date-month {
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
 .event-date-day {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1;
   margin: 0;
 }
