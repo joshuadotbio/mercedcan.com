@@ -3,7 +3,7 @@ layout: event
 title:
 excerpt:
 seo_description:
-date:
+event_date:
 location:
 host: MercedCAN
 ---
