@@ -50,7 +50,7 @@ body {
 .event-date {
   display: table-cell;
   vertical-align: top;
-  padding: 1em;
+  padding: 1em 0.75em;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .event-date-day {
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1;
   margin: 0;
 }
