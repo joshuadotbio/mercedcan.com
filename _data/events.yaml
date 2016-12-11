@@ -2,9 +2,19 @@
   event_date: 2016-12-15 00:00:00
   start_time: '7:00 pm'
   end_time: '9:00 pm'
-  location_name: 'Merced Multi-Cultural Arts Center'
-  address_line_1: '645 W Main St'
+  location_name: Merced Multi-Cultural Arts Center
+  address_line_1: 645 W Main St
   address_line_2: 'Merced, CA 95340'
   address_line_3:
-  google_maps_url: https://goo.gl/maps/ryg1sFKMmqt
+  google_maps_url: 'https://goo.gl/maps/ryg1sFKMmqt'
   facebook_event_url: 'https://www.facebook.com/events/1774726409447053/'
+- title: General Meeting
+  event_date: 2016-12-18 00:00:00
+  start_time: '2:00 pm'
+  end_time: '4:00 pm'
+  location_name: Merced Multi-Cultural Arts Center
+  address_line_1: 645 W Main St
+  address_line_2: 'Merced, CA 95340'
+  address_line_3:
+  google_maps_url: 'https://goo.gl/maps/ryg1sFKMmqt'
+  facebook_event_url:
