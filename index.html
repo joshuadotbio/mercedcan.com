@@ -51,10 +51,11 @@ layout: default
             </address>
           </article>
           <div class="event-content-buttons">
-            {% if event.google_maps_url %}
-            <a href="{{ event.google_maps_url }}" class="hollow button"><i class="fa fa-map"></i> Find on Google Maps</a>{% endif %}
             {% if event.facebook_event_url %}
-            <a href="{{ event.facebook_event_url }}" class="button"><i class="fa fa-facebook"></i> Facebook Event</a>
+            <a href="{{ event.facebook_event_url }}" class="button"><i class="fa fa-facebook"></i> Facebook</a>
+            {% endif %}
+            {% if event.google_maps_url %}
+            <a href="{{ event.google_maps_url }}" class="hollow button"><i class="fa fa-map"></i> Map</a>
             {% endif %}
           </div>
         </div>

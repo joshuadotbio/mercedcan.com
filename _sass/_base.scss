@@ -46,10 +46,12 @@ address {
 
 .event-wrapper {
   background: $color-2;
+  width: 100%;
 }
 
 .event {
   padding-bottom: 0.5em;
+  width: 100%;
 
   .section-title {
     color: white;
@@ -60,6 +62,7 @@ address {
   display: table;
   background: white;
   box-shadow: $base-shadow;
+  width: 100%;
 }
 
 .event-date {
