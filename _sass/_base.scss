@@ -2,22 +2,9 @@ body {
   background: $color-5;
 }
 
-.top-bar-wrapper,
-.top-bar,
-.top-bar ul {
-  background: $color-5;
-}
-
-.is-dropdown-submenu {
-  border-color: darken($color-5, 5%);
-}
-
-.site-title {
-  padding: 0.7rem 1rem;
-  display: table-cell;
-  line-height: 1.6;
-  font-weight: bold;
-  vertical-align: middle;
+address {
+  font-style: normal;
+  font-size: 0.8em;
 }
 
 .countdown-wrapper {
@@ -46,6 +33,10 @@ body {
   font-size: 0.8em;
 }
 
+.section-wrapper {
+  padding: 4em 0;
+}
+
 .section-title {
   h2 {
     font-weight: bold;
@@ -53,8 +44,16 @@ body {
   }
 }
 
+.event-wrapper {
+  background: $color-2;
+}
+
 .event {
   padding-bottom: 0.5em;
+
+  .section-title {
+    color: white;
+  }
 }
 
 .event-inner {
@@ -96,5 +95,5 @@ body {
 }
 
 .event-content-buttons {
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
