@@ -30,11 +30,11 @@ layout: default
     </script>
   </div>
 </section>
-<section id="events" class="event-wrapper section-wrapper">
-  <div class="row small-up-1 medium-up-2 large-up-3">
+<section id="events" class="events-wrapper section-wrapper">
+  <div class="row small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium">
     {% for event in site.data.events %}
     <div class="event column">
-      <div class="event-inner">
+      <div class="event-inner" data-equalizer-watch>
         <div class="event-date">
           <div class="event-date-month">{{ event.event_date | date: "%b" }}</div>
           <div class="event-date-day">{{ event.event_date | date: "%-d" }}</div>

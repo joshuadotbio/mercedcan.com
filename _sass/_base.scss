@@ -44,7 +44,7 @@ address {
   }
 }
 
-.event-wrapper {
+.events-wrapper {
   background: $color-2;
   width: 100%;
 }
@@ -68,7 +68,8 @@ address {
 .event-date {
   display: table-cell;
   vertical-align: top;
-  padding: 1em 0.75em;
+  padding: 1em 0;
+  width: 60px;
   text-align: center;
 }
 
@@ -99,4 +100,8 @@ address {
 
 .event-content-buttons {
   margin-top: 1em;
+}
+
+.resources-wrapper {
+  background: $color-5;
 }
