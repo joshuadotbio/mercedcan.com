@@ -39,19 +39,21 @@ layout: default
   <div class="row">
     {% for event in site.events %}
     <div class="event small-12 medium-6 columns">
-      <div class="event-date">
-        <div class="event-date-month">{{ event.event_date | date: "%b" }}</div>
-        <div class="event-date-day">{{ event.event_date | date: "%-d" }}</div>
-      </div>
-      <div class="event-content">
-        <article>
-          <h2>{{ event.title }}</h2>
-          {{ event.excerpt }}
-        </article>
-        <div class="event-content-buttons">
-          {% if event.facebook_event_url %}
-          <a href="{{ event.facebook_event_url }}" class="button"><i class="fa fa-facebook"></i> Facebook Event</a>
-          {% endif %}
+        <div class="event-inner">
+        <div class="event-date">
+          <div class="event-date-month">{{ event.event_date | date: "%b" }}</div>
+          <div class="event-date-day">{{ event.event_date | date: "%-d" }}</div>
+        </div>
+        <div class="event-content">
+          <article>
+            <h2>{{ event.title }}</h2>
+            {{ event.excerpt }}
+          </article>
+          <div class="event-content-buttons">
+            {% if event.facebook_event_url %}
+            <a href="{{ event.facebook_event_url }}" class="button"><i class="fa fa-facebook"></i> Facebook Event</a>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>

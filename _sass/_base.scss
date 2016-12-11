@@ -38,17 +38,20 @@ body {
 }
 
 .event {
+  padding-bottom: 0.5em;
+}
+
+.event-inner {
   display: table;
   background: white;
+  box-shadow: $base-shadow;
 }
 
 .event-date {
   display: table-cell;
   vertical-align: top;
-  width: 50px;
+  padding: 1em;
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 .event-date-month {
@@ -65,7 +68,6 @@ body {
 .event-content {
   display: table-cell;
   vertical-align: top;
-  padding-left: 1em;
   padding-right: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
