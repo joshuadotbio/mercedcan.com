@@ -49,16 +49,12 @@ address {
   width: 100%;
 }
 
-.event {
-  padding-bottom: 0.5em;
+.event, .resource {
+  padding-bottom: 1em;
   width: 100%;
-
-  .section-title {
-    color: white;
-  }
 }
 
-.event-inner {
+.event-inner, .resource-inner {
   display: table;
   background: white;
   box-shadow: $base-shadow;
@@ -104,4 +100,21 @@ address {
 
 .resources-wrapper {
   background: $color-5;
+}
+
+.resource {
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+.resource-inner {
+  padding: 1em;
+}
+
+.resource-category {
+  text-transform: uppercase;
+  color: $color-2;
+  font-size: 0.8em;
+  font-weight: bold;
 }
