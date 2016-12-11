@@ -1,9 +1,27 @@
 body {
-  background: #ddd;
+  background: $color-5;
+}
+
+.top-bar-wrapper,
+.top-bar,
+.top-bar ul {
+  background: $color-5;
+}
+
+.is-dropdown-submenu {
+  border-color: darken($color-5, 5%);
+}
+
+.site-title {
+  padding: 0.7rem 1rem;
+  display: table-cell;
+  line-height: 1.6;
+  font-weight: bold;
+  vertical-align: middle;
 }
 
 .countdown-wrapper {
-  background: yellow;
+  background: $color-1;
 }
 
 .countdown {
@@ -13,11 +31,9 @@ body {
   color: white;
 
   &.past {
-    color: #777;
   }
 
   &.future {
-    color: black;
   }
 }
 
@@ -33,7 +49,7 @@ body {
 .section-title {
   h2 {
     font-weight: bold;
-    margin-top: 1em;
+    margin-top: 2em;
   }
 }
 
