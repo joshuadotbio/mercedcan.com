@@ -103,6 +103,13 @@ address {
 }
 
 .resource {
+  a {
+    color: black;
+    &:hover {
+      color: #1585cf;
+    }
+  }
+
   h2 {
     font-size: 1.2em;
   }
