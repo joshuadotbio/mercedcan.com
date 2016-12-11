@@ -43,6 +43,7 @@ layout: default
           <article>
             <h2>{{ event.title }}</h2>
             <address>
+              {% if event.start_time %}<i class="fa fa-clock-o"></i> {{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}<br />{% endif %}{% endif %}
               {% if event.location_name %}{{ event.location_name }}<br />{% endif %}
               {% if event.address_line_1 %}{{ event.address_line_1 }}<br />{% endif %}
               {% if event.address_line_2 %}{{ event.address_line_2 }}<br />{% endif %}
@@ -51,7 +52,7 @@ layout: default
           </article>
           <div class="event-content-buttons">
             {% if event.google_maps_url %}
-            <a href="{{ event.google_maps_url }}" class="hollow secondary button"><i class="fa fa-map"></i> Find on Google Maps</a>{% endif %}
+            <a href="{{ event.google_maps_url }}" class="hollow button"><i class="fa fa-map"></i> Find on Google Maps</a>{% endif %}
             {% if event.facebook_event_url %}
             <a href="{{ event.facebook_event_url }}" class="button"><i class="fa fa-facebook"></i> Facebook Event</a>
             {% endif %}
