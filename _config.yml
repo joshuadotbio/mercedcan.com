@@ -26,11 +26,6 @@ countdown:
   inauguration_date: 2017-01-20
   midterm_date: 2018-11-06
 
-collections:
-  events:
-    output: true
-    permalink: /events/:path/
-
 defaults:
   - scope:
       path: ""
