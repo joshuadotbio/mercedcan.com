@@ -1,127 +1,19 @@
 body {
-  background: $color-2;
+  background: $body-background-color;
 }
 
-address {
-  font-style: normal;
-  font-size: 0.8em;
+.section {
+  padding: 5em 0;
 }
 
-.countdown-wrapper {
-  background: $color-1;
-}
-
-.countdown {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  text-align: center;
-  color: white;
-
-  &.past {
-  }
-
-  &.future {
-  }
-}
-
-.countdown-days {
-  font-size: 2em;
-}
-
-.countdown-description {
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-
-.section-wrapper {
-  padding: 4em 0;
-}
-
-.section-title {
-  h2 {
-    font-weight: bold;
-    margin-top: 2em;
-  }
-}
-
-.events-wrapper {
-  background: $color-2;
-  width: 100%;
-}
-
-.event, .resource {
-  padding-bottom: 1em;
-  width: 100%;
-}
-
-.event-inner, .resource-inner {
-  display: table;
-  background: white;
-  box-shadow: $base-shadow;
-  width: 100%;
-}
-
-.event-date {
-  display: table-cell;
-  vertical-align: top;
-  padding: 1.1em 0;
-  width: 60px;
-  text-align: center;
-}
-
-.event-date-month {
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-
-.event-date-day {
-  font-size: 2em;
-  line-height: 1;
-  margin: 0;
-}
-
-.event-content {
-  display: table-cell;
-  vertical-align: top;
-  padding-right: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-
-  h2 {
-    font-size: 1.2em;
-    font-weight: normal;
-    margin-top: 0;
-  }
-}
-
-.event-content-buttons {
-  margin-top: 1em;
-}
-
-.resources-wrapper {
-  background: $color-5;
-}
-
-.resource {
-  a {
-    color: black;
-    &:hover {
-      color: #1585cf;
-    }
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-}
-
-.resource-inner {
+.section-inner {
   padding: 1em;
 }
 
-.resource-category {
-  text-transform: uppercase;
-  color: $color-2;
-  font-size: 0.8em;
-  font-weight: bold;
+.bg-light-1 {
+  background-color: white;
+}
+
+.box-shadow-1 {
+  box-shadow: 1px 1px 2px rgba(50,50,50,0.75);
 }

@@ -21,17 +21,22 @@ url: ""
 twitter_username: jekyllrb
 github_username: jekyll
 
-countdown:
-  election_date: 2016-11-09
-  inauguration_date: 2017-01-20
-  midterm_date: 2018-11-06
+collections:
+  resources:
+    output: true
+    permalink: /resources/:path/
 
 defaults:
   - scope:
       path: ""
-      type: events
+      type: resources
     values:
-      layout: event
+      layout: page
+
+countdown:
+  election_date: 2016-11-09
+  inauguration_date: 2017-01-20
+  midterm_date: 2018-11-06
 
 # Build settings
 markdown: kramdown

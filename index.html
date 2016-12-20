@@ -1,35 +1,6 @@
 ---
 layout: default
 ---
-<section id="countdowns" class="countdown-wrapper">
-  <div class="row">
-    <div id="countdown-election" class="countdown past small-4 medium-4 columns">
-      <div class="countdown-days"></div>
-      <div class="countdown-description">Days since election</div>
-    </div>
-    <div id="countdown-inauguration" class="countdown future small-4 medium-4 columns">
-      <div class="countdown-days"></div>
-      <div class="countdown-description">Days until inaugration</div>
-    </div>
-    <div id="countdown-midterm" class="countdown future small-4 medium-4 columns">
-      <div class="countdown-days"></div>
-      <div class="countdown-description">Days until midterms</div>
-    </div>
-    <script>
-      var election_date = moment("{{site.countdown.election_date}}");
-      var inauguration_date = moment("{{site.countdown.inauguration_date}}");
-      var midterm_date = moment("{{site.countdown.midterm_date}}");
-
-      var diff_election = moment().diff(election_date, 'days');
-      var diff_inauguration = -1 * moment().diff(inauguration_date, 'days');
-      var diff_midterm = -1 * moment().diff(midterm_date, 'days');
-
-      $("#countdown-election .countdown-days").text(diff_election);
-      $("#countdown-inauguration .countdown-days").text(diff_inauguration);
-      $("#countdown-midterm .countdown-days").text(diff_midterm);
-    </script>
-  </div>
-</section>
 <section id="events" class="events-wrapper section-wrapper">
   <div class="row small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium">
     {% for event in site.data.events %}
