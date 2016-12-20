@@ -1,16 +1,22 @@
 <section id="countdowns" class="layer">
   <div class="row text-center">
-    <div id="countdown-election" class="small-4 columns first">
-      <div class="stat"></div>
-      <small>Days since election</small>
+    <div id="countdown-election" class="small-4 columns">
+      <div class="first">
+        <div class="stat"></div>
+        <small>Days since election</small>
+      </div>
     </div>
-    <div id="countdown-inauguration" class="small-4 columns second">
-      <div class="stat"></div>
-      <small>Days until inaugration</small>
+    <div id="countdown-inauguration" class="small-4 columns">
+      <div class="second">
+        <div class="stat"></div>
+        <small>Days until inaugration</small>
+      </div>
     </div>
-    <div id="countdown-midterm" class="small-4 columns third">
-      <div class="stat"></div>
-      <small>Days until midterms</small>
+    <div id="countdown-midterm" class="small-4 columns">
+      <div class="third">
+        <div class="stat"></div>
+        <small>Days until midterms</small>
+      </div>
     </div>
     <script>
       var election_date = moment("{{site.countdown.election_date}}");
