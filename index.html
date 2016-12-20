@@ -1,59 +1,54 @@
 ---
 layout: default
 ---
-<section id="events" class="events-wrapper section-wrapper">
-  <div class="row small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium">
-    {% for event in site.data.events %}
-    <div class="event column">
-      <div class="event-inner" data-equalizer-watch>
-        <div class="event-date">
-          <div class="event-date-month">{{ event.event_date | date: "%b" }}</div>
-          <div class="event-date-day">{{ event.event_date | date: "%-d" }}</div>
-        </div>
-        <div class="event-content">
-          <article>
-            <h2>{{ event.title }}</h2>
-            <address>
-              {% if event.start_time %}<i class="fa fa-clock-o"></i> {{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}<br />{% endif %}{% endif %}
-              {% if event.location_name %}{{ event.location_name }}<br />{% endif %}
-              {% if event.address_line_1 %}{{ event.address_line_1 }}<br />{% endif %}
-              {% if event.address_line_2 %}{{ event.address_line_2 }}<br />{% endif %}
-              {% if event.address_line_3 %}{{ event.address_line_3 }}<br />{% endif %}
-            </address>
-          </article>
-          <div class="event-content-buttons">
-            {% if event.facebook_event_url %}
-            <a href="{{ event.facebook_event_url }}" class="button"><i class="fa fa-facebook"></i> Facebook</a>
-            {% endif %}
-            {% if event.google_maps_url %}
-            <a href="{{ event.google_maps_url }}" class="hollow button"><i class="fa fa-map"></i> Map</a>
-            {% endif %}
-          </div>
-        </div>
+{% include masthead.html %}
+{% include countdown.html %}
+<section id="resources" class="layer layer--padded">
+  <div class="row">
+    <div class="small-12 columns">
+      <h1 class="section-title">Resources</h1>
+    </div>
+  </div>
+  <div class="row" data-equalizer data-equalize-on="medium">
+    <div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
+      <div class="card card--immigration-resources">
+        <ul class="menu vertical">
+          <li class="menu-text">Immigration Resources</li>
+          {% for item in site.data.immigration_resources limit: 5 %}
+          <li><a href="item.url">{{ item.title }}</a></li>
+          {% endfor %}
+          <li class="menu-text"><a href="#" class="button hollow expanded">See more</a></li>
+        </ul>
       </div>
     </div>
-    {% endfor %}
+    <div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
+      <div class="card card--immigration-resources">
+        <ul class="menu vertical">
+          <li class="menu-text">Immigration Resources</li>
+          {% for item in site.data.immigration_resources limit: 5 %}
+          <li><a href="item.url">{{ item.title }}</a></li>
+          {% endfor %}
+          <li class="menu-text"><a href="#" class="button hollow expanded">See more</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
+      <div class="card card--immigration-resources">
+        <ul class="menu vertical">
+          <li class="menu-text">Immigration Resources</li>
+          {% for item in site.data.immigration_resources limit: 5 %}
+          <li><a href="item.url">{{ item.title }}</a></li>
+          {% endfor %}
+          <li class="menu-text"><a href="#" class="button hollow expanded">See more</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
-<section id="resources" class="resources-wrapper section-wrapper">
-  <div class="row small-up-1 medium-up-2 large-up-3 grid">
-    {% for resource in site.data.resources %}
-    <div class="resource column grid-item">
-      <div class="resource-inner">
-        <article>
-          <p class="resource-category">{{ resource.category }}</p>
-          <p>{{ resource.note }}</p>
-          <a href="{{ resource.source_url }}"><h2><i class="fa fa-link"></i> {{ resource.link_title }}</h2></a>
-          <p><a href="{{ resource.source_url }}"><small>{{ resource.source_attribution }}</small></a></p>
-          <a href="{{ resource.source_url }}" class="hollow button" rel="nofollow"><i class="fa fa-arrow-right"></i> Go to External Page</a>
-        </article>
-      </div>
+<section id="events" class="layer layer--padded">
+  <div class="row">
+    <div class="small-12 columns">
+      <h1 class="section-title">Next Event</h1>
     </div>
-    {% endfor %}
   </div>
-  <script>
-    $('.grid').masonry({
-      itemSelector: '.grid-item'
-    });
-  </script>
 </section>

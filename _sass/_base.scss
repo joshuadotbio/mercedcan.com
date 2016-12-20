@@ -1,13 +1,87 @@
 body {
-  background: $body-background-color;
+  background: $color-2;
 }
 
-.section {
-  padding: 5em 0;
+.layer {
+  &.layer--padded {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
-.section-inner {
-  padding: 1em;
+.masthead {
+  position: relative;
+  background: white;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#5fa87d,darken(#5fa87d,25%));
+    opacity: .4; 
+  }
+}
+
+.liberty {
+  background: url('/assets/images/liberty.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.site-name {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  h1 {
+    font-family: "henderson-slab-basic";
+  }
+}
+
+.card {
+  background: white;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+.card--immigration-resources {
+  border-top: 8px solid red;
+}
+
+.card--environment-resources {
+  border-top: 8px solid green;
+}
+
+.card--healthcare-resources {
+  border-top: 8px solid blue;
+}
+
+#countdowns {
+  text-transform: uppercase;
+  line-height: 1;
+  background: #5fa87d;
+  color: white;
+
+  .first, .second, .third {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .first {
+    background: transparent;
+  }
+  .second {
+    background: transparent;
+  }
+  .third {
+    background: transparent;
+  }
+}
+
+.section-title {
+  color: white;
 }
 
 .bg-light-1 {

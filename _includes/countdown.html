@@ -1,16 +1,16 @@
-<section id="countdowns" class="countdown-wrapper">
-  <div class="row">
-    <div id="countdown-election" class="countdown past small-4 medium-4 columns">
-      <div class="countdown-days"></div>
-      <div class="countdown-description">Days since election</div>
+<section id="countdowns" class="layer">
+  <div class="row text-center">
+    <div id="countdown-election" class="small-4 columns first">
+      <div class="stat"></div>
+      <small>Days since election</small>
     </div>
-    <div id="countdown-inauguration" class="countdown future small-4 medium-4 columns">
-      <div class="countdown-days"></div>
-      <div class="countdown-description">Days until inaugration</div>
+    <div id="countdown-inauguration" class="small-4 columns second">
+      <div class="stat"></div>
+      <small>Days until inaugration</small>
     </div>
-    <div id="countdown-midterm" class="countdown future small-4 medium-4 columns">
-      <div class="countdown-days"></div>
-      <div class="countdown-description">Days until midterms</div>
+    <div id="countdown-midterm" class="small-4 columns third">
+      <div class="stat"></div>
+      <small>Days until midterms</small>
     </div>
     <script>
       var election_date = moment("{{site.countdown.election_date}}");
@@ -21,9 +21,9 @@
       var diff_inauguration = -1 * moment().diff(inauguration_date, 'days');
       var diff_midterm = -1 * moment().diff(midterm_date, 'days');
 
-      $("#countdown-election .countdown-days").text(diff_election);
-      $("#countdown-inauguration .countdown-days").text(diff_inauguration);
-      $("#countdown-midterm .countdown-days").text(diff_midterm);
+      $("#countdown-election .stat").text(diff_election);
+      $("#countdown-inauguration .stat").text(diff_inauguration);
+      $("#countdown-midterm .stat").text(diff_midterm);
     </script>
   </div>
 </section>

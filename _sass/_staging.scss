@@ -1,5 +1,4 @@
 body {
-  background: $color-2;
 }
 
 address {
@@ -7,45 +6,7 @@ address {
   font-size: 0.8em;
 }
 
-.countdown-wrapper {
-  background: $color-1;
-}
-
-.countdown {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  text-align: center;
-  color: white;
-
-  &.past {
-  }
-
-  &.future {
-  }
-}
-
-.countdown-days {
-  font-size: 2em;
-}
-
-.countdown-description {
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-
-.section-wrapper {
-  padding: 4em 0;
-}
-
-.section-title {
-  h2 {
-    font-weight: bold;
-    margin-top: 2em;
-  }
-}
-
 .events-wrapper {
-  background: $color-2;
   width: 100%;
 }
 
@@ -96,32 +57,4 @@ address {
 
 .event-content-buttons {
   margin-top: 1em;
-}
-
-.resources-wrapper {
-  background: $color-5;
-}
-
-.resource {
-  a {
-    color: black;
-    &:hover {
-      color: #1585cf;
-    }
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-}
-
-.resource-inner {
-  padding: 1em;
-}
-
-.resource-category {
-  text-transform: uppercase;
-  color: $color-2;
-  font-size: 0.8em;
-  font-weight: bold;
 }
