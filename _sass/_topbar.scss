@@ -1,0 +1,40 @@
+.topbar {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.topbar-inner {
+  position: relative;
+
+  a {
+    color: inherit;
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  .site-name {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .link {
+    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1em;
+    font-weight: bold;
+  }
+}

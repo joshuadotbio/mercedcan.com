@@ -1,6 +1,4 @@
-body {
-  background: $color-2;
-}
+
 
 .layer {
   &.layer--padded {
@@ -20,7 +18,7 @@ body {
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to bottom right,#5fa87d,darken(#5fa87d,25%));
-    opacity: .4; 
+    opacity: .4;
   }
 }
 
@@ -42,25 +40,6 @@ body {
   }
 }
 
-.card {
-  background: white;
-  padding-top: 2em;
-  padding-bottom: 1em;
-  margin-bottom: 2em;
-}
-
-.card--immigration-resources {
-  border-top: 8px solid red;
-}
-
-.card--environment-resources {
-  border-top: 8px solid green;
-}
-
-.card--healthcare-resources {
-  border-top: 8px solid blue;
-}
-
 #countdowns {
   text-transform: uppercase;
   line-height: 1;
@@ -68,29 +47,24 @@ body {
   color: white;
 
   .first, .second, .third {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: transparent;
+
+    @include breakpoint(bp(iPhone6_l)) {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
   }
 
   .first {
-    background: transparent;
   }
   .second {
-    background: red;
   }
   .third {
-    background: red;
   }
 }
 
 .section-title {
   color: white;
-}
-
-.bg-light-1 {
-  background-color: white;
-}
-
-.box-shadow-1 {
-  box-shadow: 1px 1px 2px rgba(50,50,50,0.75);
 }

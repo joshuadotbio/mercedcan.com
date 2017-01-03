@@ -9,46 +9,14 @@ layout: default
       <h1 class="section-title">Resources</h1>
     </div>
   </div>
-  <div class="row" data-equalizer data-equalize-on="medium">
-    <div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
-      <div class="card card--immigration-resources">
-        <ul class="menu vertical">
-          <li class="menu-text">Immigration Resources</li>
-          {% for item in site.data.immigration_resources limit: 5 %}
-          <li><a href="item.url">{{ item.title }}</a></li>
-          {% endfor %}
-          <li class="menu-text"><a href="#" class="button hollow expanded">See more</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
-      <div class="card card--immigration-resources">
-        <ul class="menu vertical">
-          <li class="menu-text">Immigration Resources</li>
-          {% for item in site.data.immigration_resources limit: 5 %}
-          <li><a href="item.url">{{ item.title }}</a></li>
-          {% endfor %}
-          <li class="menu-text"><a href="#" class="button hollow expanded">See more</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
-      <div class="card card--immigration-resources">
-        <ul class="menu vertical">
-          <li class="menu-text">Immigration Resources</li>
-          {% for item in site.data.immigration_resources limit: 5 %}
-          <li><a href="item.url">{{ item.title }}</a></li>
-          {% endfor %}
-          <li class="menu-text"><a href="#" class="button hollow expanded">See more</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="events" class="layer layer--padded">
   <div class="row">
-    <div class="small-12 columns">
-      <h1 class="section-title">Next Event</h1>
+    <div class="small-12 medium-8 columns post-listings">
+      {% for post in site.posts %}
+      <article class="post-listing">
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.description }}</p>
+      </article>
+      {% endfor %}
     </div>
   </div>
 </section>

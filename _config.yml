@@ -20,11 +20,19 @@ baseurl: ""
 url: ""
 twitter_username: jekyllrb
 github_username: jekyll
+permalink: /:categories/:title
 
 collections:
   resources:
     output: true
     permalink: /resources/:path/
+
+categories:
+  - "organizing"
+  - "immigration"
+  - "lgbtq"
+  - "healthcare"
+  - "environment"
 
 defaults:
   - scope:
@@ -41,7 +49,6 @@ countdown:
 # Build settings
 markdown: kramdown
 gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
