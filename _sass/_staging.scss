@@ -21,28 +21,37 @@ body {
   @include container();
 }
 
+.masthead {
+  display: table;
+  width: 100%;
+}
+
 .masthead-inner {
   $background: $c2;
 
   background-color: $background;
-  background-image: url('/assets/images/liberty.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: contain;
   padding-top: 1em;
   padding-bottom: 1em;
   position: relative;
-  display: table;
+  display: table-cell;
+  vertical-align: middle;
   width: 100%;
   padding: 6em 1rem;
 
-  @include breakpoint(bp(iPhone6_l)) {
+  @include breakpoint(bp(iPadAir_l)) {
+    background-position: 0 0;
+    background-image: url('/assets/images/liberty.png');
+  }
+
+  @include breakpoint(bp(laptop)) {
     background-position: 10% 0;
+    background-image: url('/assets/images/liberty.png');
   }
 
   h1 {
-    display: table-cell;
-    vertical-align: middle;
     width: 100%;
     margin: 0;
     position: relative;
@@ -65,6 +74,31 @@ body {
         color: inherit;
       }
     }
+  }
+}
+
+.countdowns {
+  @include container(bp(iPhone6_l));
+  font-family: 'proxima-nova-condensed', sans-serif;
+  margin-top: 2em;
+  color: $c5;
+}
+
+.countdown {
+  @include span(1 of 3);
+  text-align: center;
+  text-transform: uppercase;
+
+  .days {
+    @include typi($h3-map);
+  }
+
+  .description {
+    @include typi($small-map);
+  }
+
+  &.election {
+    color: #666;
   }
 }
 
