@@ -30,8 +30,9 @@ body {
   $background: $c2;
 
   background-color: $background;
+  background-image: url('/assets/images/liberty.png');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center bottom;
   background-size: contain;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -41,14 +42,21 @@ body {
   width: 100%;
   padding: 6em 1rem;
 
+  &:before {
+    content: '';
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	background-image: linear-gradient(to bottom right,$background,$background);
+  	opacity: .9;
+  }
+
   @include breakpoint(bp(iPadAir_l)) {
-    background-position: 0 0;
-    background-image: url('/assets/images/liberty.png');
   }
 
   @include breakpoint(bp(laptop)) {
-    background-position: 10% 0;
-    background-image: url('/assets/images/liberty.png');
   }
 
   h1 {
@@ -88,6 +96,7 @@ body {
   @include span(1 of 3);
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 
   .days {
     @include typi($h3-map);
