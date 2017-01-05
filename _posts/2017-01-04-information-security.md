@@ -3,7 +3,7 @@ layout: post
 update_date: 2016/12/14
 title: Information Security
 description:
-category: immigration
+category: operations
 seo_title: The SEO title
 seo_description: The SEO description
 facebook_image:
