@@ -1,40 +1,37 @@
 .topbar {
-  position: absolute;
-  z-index: 99999;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
+  $background: $c2;
+  background: $background;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .topbar-inner {
-  position: relative;
+  $color: $c5;
+  $height: 4rem;
 
-  a {
-    color: inherit;
-    &:hover {
-      color: inherit;
+  position: relative;
+  height: $height;
+
+  .site-name {
+  }
+
+  .site-name-extension {
+    display: none;
+    @include breakpoint(bp(iPadAir_l)) {
+      display: inline;
     }
   }
 
-  .site-name {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    display: inline-block;
-    font-weight: bold;
-  }
-
   .links {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    float: right;
   }
 
   .link {
     display: inline-block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 1em;
-    font-weight: bold;
+    line-height: $height;
+    color: $color;
+    &:hover {
+      color: $color;
+    }
   }
 }

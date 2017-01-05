@@ -22,25 +22,6 @@ twitter_username: jekyllrb
 github_username: jekyll
 permalink: /:categories/:title
 
-collections:
-  resources:
-    output: true
-    permalink: /resources/:path/
-
-categories:
-  - "organizing"
-  - "immigration"
-  - "lgbtq"
-  - "healthcare"
-  - "environment"
-
-defaults:
-  - scope:
-      path: ""
-      type: resources
-    values:
-      layout: page
-
 countdown:
   election_date: 2016-11-09
   inauguration_date: 2017-01-20

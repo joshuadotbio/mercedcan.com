@@ -1,12 +1,25 @@
+
+
 body {
-  font-family: sans-serif;
+  font-family: 'freight-text-pro', serif;
+}
+
+.post {
+  padding-bottom: 10em;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'proxima-nova-condensed', sans-serif;
+  margin: 0.85em 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.dropcap {
+  font-family: serif;
+  margin-right: 0.05em;
 }
 
 $ms-base: 1em;
@@ -18,15 +31,15 @@ $typi: (
 );
 
 $p-map: (
-  null: (ms(0), 1.5),
+  null: (ms(1), 1.5),
   iPhone5_l: (ms(2)),
   iPadAir_l: (ms(3), 1.6)
 );
 
 $h1-map: (
-  null: (ms(6), 1),
-  iPhone5_l: (ms(8), 1),
-  iPadAir_l: (ms(13), 0.85)
+  null: (ms(8), 1),
+  iPhone5_l: (ms(10)),
+  iPadAir_l: (ms(13))
 );
 
 $h2-map: (
@@ -65,26 +78,35 @@ $small-map: (
   iPadAir_l: (ms(0))
 );
 
+$topbar-map: (
+  null: (ms(2), 1)
+);
+
 $site-name-map: (
-  null: (ms(0), 1),
-  iPhone5_l: (ms(2)),
-  iPadAir_l: (ms(3))
+  null: (ms(2))
+);
+
+$card-title-map: (
+  null: (ms(3), 1),
+  iPhone5_l: (ms(4)),
+  iPadAir_l: (ms(5))
 );
 
 html {@include typi-base();}
-h1 {@include typi($h1-map);}
-h2 {@include typi($h2-map);}
-h3 {@include typi($h3-map);}
-h4 {@include typi($h4-map);}
-h5 {@include typi($h5-map);}
-h6 {@include typi($h6-map);}
+h1, .h1 {@include typi($h1-map);}
+h2, .h2 {@include typi($h2-map);}
+h3, .h3 {@include typi($h3-map);}
+h4, .h4 {@include typi($h4-map);}
+h5, .h5 {@include typi($h5-map);}
+h6, .h6 {@include typi($h6-map);}
 p {@include typi($p-map);}
 small {@include typi($small-map);}
 
 .site-name {
   @include typi($site-name-map);
+  font-weight: bold;
 }
 
-.topbar-inner .link {
-  @include typi($small-map);
+.card-title {
+  @include typi($card-title-map);
 }

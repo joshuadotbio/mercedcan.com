@@ -3,10 +3,10 @@
 @import 'lib/susy';
 @import 'lib/modular-scale';
 @import 'lib/typi';
-@import 'variables';
 @import 'functions';
+@import 'variables';
+@import 'mixins';
 @import 'typography';
-@import 'base';
-@import 'page';
+@import 'colors';
 @import 'topbar';
 @import 'staging';

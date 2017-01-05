@@ -1,8 +1,8 @@
 ---
 layout: post
 update_date: 2016/12/14
-title: A broken viral two chain hammer broke my rib
-description:
+title: Resources on Immigration
+description: We've compiled useful information on DACA, DAPA, and other topics.
 category: immigration
 seo_title: The SEO title
 seo_description: The SEO description
