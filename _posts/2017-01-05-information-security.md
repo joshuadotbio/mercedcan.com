@@ -9,11 +9,11 @@ facebook_image:
 notice: This article is a work in progress. When it is completed, this notice will be removed.
 ---
 
-Our right to privacy is under attack. Information revealed over the past two decades show clearly that multiple entities are engaged in mass surveillance of our communications and activities today. These entities include governments and international corporations.
+Our right to privacy is under attack. Information revealed over the past two decades show clearly that both governments and international corporations are engaged in mass surveillance of our communications and activities today. This type of mass surveillance directly violates our to right to privacy and indirectly threatens our right to free expression and peaceful assembly. It is therefore our duty as citizens to wisely use the tools and methods available to us to protect our digital communications from unfair scrutiny by state and non-state actors.
 
-Information security is a shared effort. Since it pertains to communication, it cannot be a one-sided commitment. It is our common duty as citizens not only to protect ourselves from unlawful mass surveillance, but also to protect our networks. Perhaps our most powerful tool for achieving this is encryption.
+Information security is a shared effort. Since it pertains to communication, it cannot be a one-sided commitment. Our common duty is not only to protect ourselves from unlawful mass surveillance, but also to protect the network. Our most powerful tool for achieving that is encryption.
 
-What follows are our recommendations for achieving secure, private, and encrypted communication, covering instant messaging, voice calling, video calling, email, and file sharing. Since data is only as safe as the device where it is stored, we also have a recommendation for encrypting laptop and desktop hard drives.
+What follows are our recommendations for achieving secure, private, and encrypted communication through instant messaging, voice calling, video calling, email, and file sharing. Since data is only as safe as the device where it is stored, we also have a recommendation for encrypting laptop and desktop hard drives. As further reading, we provide links to articles that discuss the relative merits of smartphone encryption on different brands and platforms.
 
 ## Instant Messaging
 
