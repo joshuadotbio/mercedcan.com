@@ -9,7 +9,7 @@ facebook_image:
 notice: This article is a work in progress. When it is completed, this notice will be removed.
 ---
 
-Our right to privacy is under attack. Information revealed over the past two decades show clearly that both governments and international corporations are engaged in mass surveillance of our communications and activities today. This type of mass surveillance directly violates our to right to privacy and indirectly threatens our right to free expression and peaceful assembly. It is therefore our duty as citizens to wisely use the tools and methods available to us to protect our digital communications from unfair scrutiny by state and non-state actors.
+Our right to privacy is under attack. Information revealed over the past two decades show clearly that both governments and international corporations are engaged in mass surveillance of our communications and activities today. This type of mass surveillance directly violates our right to privacy and indirectly threatens our rights to free expression and peaceful assembly. It is therefore our duty as citizens to wisely use the tools and methods available to us to protect our digital communications from unfair scrutiny by state and non-state actors.
 
 Information security is a shared effort. Since it pertains to communication, it cannot be a one-sided commitment. Our common duty is not only to protect ourselves from unlawful mass surveillance, but also to protect the network. Our most powerful tool for achieving that is encryption.
 
