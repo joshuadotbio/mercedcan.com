@@ -17,4 +17,4 @@ What follows are our recommendations for achieving secure, private, and encrypte
 
 ## Instant Messaging
 
-Our top recommendation for an instant messaging application is WhatsApp. Although WhatsApp was not known for its security features when it was first released in 2009, [WhatsApp has since implemented the Signal Protocol for encrypted communications developed by Open Whisper Systems](https://whispersystems.org/blog/whatsapp-complete/).
+Our top recommendation for an instant messaging application is WhatsApp. Although it was not known for its security features when it was first released in 2009, [WhatsApp has since implemented the Signal Protocol for encrypted communications developed by Open Whisper Systems](https://whispersystems.org/blog/whatsapp-complete/). Using this protocol, messages are encrypted before they leave your device, so that only encrypted data is stored in WhatsApp's servers.
