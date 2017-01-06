@@ -128,7 +128,7 @@ body {
   position: relative;
 
   .days {
-    @include typi($h3-map);
+    @include typi($h2-map);
   }
 
   .description {
