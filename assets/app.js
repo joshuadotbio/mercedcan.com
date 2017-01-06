@@ -4,6 +4,7 @@
 {% include js/jquery-3.1.1.min.js %}
 {% include js/moment.min.js %}
 {% include js/dropcap.min.js %}
+{% include js/md5.min.js %}
 
 $(function() {
   $('.post-listing').click(function() {
@@ -18,14 +19,16 @@ $(function() {
   window.Dropcap.layout(document.querySelectorAll('.dropcap'), 3, 2);
 });
 
-var election_date = moment($('.election').attr('date'));
-var inauguration_date = moment($('.inauguration').attr('date'));
-var midterm_date = moment($('.midterm').attr('date'));
+$(function() {
+  var election_date = moment($('.election').attr('date'));
+  var inauguration_date = moment($('.inauguration').attr('date'));
+  var midterm_date = moment($('.midterm').attr('date'));
 
-var diff_election = moment().diff(election_date, 'days');
-var diff_inauguration = -1 * moment().diff(inauguration_date, 'days');
-var diff_midterm = -1 * moment().diff(midterm_date, 'days');
+  var diff_election = moment().diff(election_date, 'days');
+  var diff_inauguration = -1 * moment().diff(inauguration_date, 'days');
+  var diff_midterm = -1 * moment().diff(midterm_date, 'days');
 
-$('.election .days').text(diff_election);
-$('.inauguration .days').text(diff_inauguration);
-$('.midterm .days').text(diff_midterm);
+  $('.election .days').text(diff_election);
+  $('.inauguration .days').text(diff_inauguration);
+  $('.midterm .days').text(diff_midterm);
+});
