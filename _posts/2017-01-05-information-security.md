@@ -27,4 +27,4 @@ WhatsApp and Signal both provide encrypted voice calling with the same level of 
 
 ## Video Calling
 
-WhatsApp provides encrypted video calling, but Signal does not. Currently, WhatsApp is our only recommendation for secure video calling.
+WhatsApp provides encrypted video calling, but Signal does not. Currently, [WhatsApp is our only recommendation for secure video calling](https://nakedsecurity.sophos.com/2016/11/16/whatsapp-tightens-user-privacy-with-encrypted-video-calls/).
