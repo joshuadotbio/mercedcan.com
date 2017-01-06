@@ -3,7 +3,7 @@
 }
 
 body {
-  background: $c5;
+  background: white;
 }
 
 .post {
@@ -11,6 +11,24 @@ body {
 
 .post-header {
   padding-bottom: 0.1em;
+}
+
+.post-notice {
+  padding: 1em;
+  @include typi($small-map);
+  background: $c3;
+  color: white;
+  @extend %shadow3;
+  margin-bottom: 5em;
+  font-family: "proxima-nova-condensed", sans-serif;
+}
+
+.placeholder {
+  text-align: center;
+  padding-top: 5em;
+  h1 {
+    color: #555;
+  }
 }
 
 .layer {
@@ -111,23 +129,53 @@ body {
   }
 }
 
-.container {
-  @include container();
+.post-container {
+  @include container(800px);
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .post-listings {
-  @include breakpoint(bp(iPadAir_p)) {
-    @include span(8);
-  }
+  margin-top: 1rem;
+  @include container();
+  padding-bottom: 10em;
 }
 
 .post-listing {
-  padding-bottom: 2em;
-  margin-bottom: 2em;
-  border-bottom: 1px solid #aaa;
+  margin-bottom: 1rem;
+
+  @include breakpoint(bp(iPhone6_l)) {
+    padding: 0.5rem;
+  }
+
   h1 {
-    margin-bottom: 0;
+    margin: 0;
+    a {
+      color: inherit;
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.post-listing-inner {
+  $border: 1px solid darken(white,10%);
+  padding: 2em 1rem;
+  background: white;
+  border-top: $border;
+  border-bottom: $border;
+  transition: box-shadow 0.10s;
+  cursor: pointer;
+
+  @include breakpoint(bp(iPhone6_l)) {
+    padding: 3em 2rem;
+    border-radius: 0.25rem;
+    border: $border;
+    box-shadow: $shadow1;
+  }
+
+  &:hover {
+    @extend %shadow2;
   }
 }

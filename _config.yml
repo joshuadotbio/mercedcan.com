@@ -20,7 +20,7 @@ baseurl: ""
 url: ""
 twitter_username: jekyllrb
 github_username: jekyll
-permalink: /:categories/:title
+permalink: /:title
 
 countdown:
   election_date: 2016-11-09

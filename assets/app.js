@@ -6,6 +6,12 @@
 {% include js/dropcap.min.js %}
 
 $(function() {
+  $('.post-listing').click(function() {
+    window.location = this.getAttribute("href");
+  });
+});
+
+$(function() {
   $('.post-body p').first().html(function (i, html) {
     return html.replace(/^[^a-zA-Z]*([a-zA-Z])/g, '<span class="dropcap">$1</span>');
   });
