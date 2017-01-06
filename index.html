@@ -7,6 +7,9 @@ layout: default
   <article class="post-listing" href="{{ post.url }}">
     <div class="post-listing-inner">
       <h1 class="h3"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      {% if post.notice %}
+      <aside class="post-notice--subtle">{{ post.notice }}</aside>
+      {% endif %}
       <p>{{ post.description }}</p>
       <small>Published on {{ post.date | date: "%Y %B %-d" }}{% if post.category %} under {{ post.category | capitalize }}{% endif %}</small>
     </div>
