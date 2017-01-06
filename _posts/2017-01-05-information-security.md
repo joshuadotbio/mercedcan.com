@@ -13,8 +13,8 @@ Our right to privacy is under attack. Information revealed over the past two dec
 
 Information security is a shared effort. Since it pertains to communication, it cannot be a one-sided commitment. It is our common duty as citizens not only to protect ourselves from unlawful mass surveillance, but also to protect our networks. Perhaps our most powerful tool for achieving this is encryption.
 
-What follows are our recommendations for achieving secure, private, and encrypted communication, covering instant messaging, voice calling, email, video calling, and file sharing.
+What follows are our recommendations for achieving secure, private, and encrypted communication, covering instant messaging, voice calling, email, video calling, and file sharing. Since data is only as safe as the device where it is stored, we also have a recommendation for encrypting laptop and desktop hard drives.
 
 ## Instant Messaging
 
-Our recommended instant messaging application is WhatsApp. Although it was not known for its security features when it was first released in 2009, [WhatsApp has since implemented the Signal Protocol for encrypted communications developed by Open Whisper Systems](https://whispersystems.org/blog/whatsapp-complete/).
+Our top recommendation for an instant messaging application is WhatsApp. Although WhatsApp was not known for its security features when it was first released in 2009, [WhatsApp has since implemented the Signal Protocol for encrypted communications developed by Open Whisper Systems](https://whispersystems.org/blog/whatsapp-complete/).
