@@ -13,7 +13,7 @@ Our right to privacy is under attack. Information revealed over the past two dec
 
 Information security is a shared effort. Since it pertains to communication, it cannot be a one-sided commitment. Our common duty is not only to protect ourselves from unlawful mass surveillance, but also to protect the network. Our most powerful tool for achieving that is encryption.
 
-What follows are our recommendations for achieving secure, private, and encrypted communication through instant messaging, voice calling, video calling, email, and file sharing. Since data is only as safe as the device where it is stored, we also have a recommendation for encrypting laptop and desktop hard drives. As further reading, we provide links to articles that discuss the relative merits of smartphone encryption on different brands and platforms.
+What follows are our recommendations for achieving secure, private, and encrypted communication. These recommendations cover instant messaging, voice calling, video calling, email, and file sharing. Since data is only as safe as the device where it is stored, we also have a recommendation for encrypting laptop and desktop hard drives. As further reading, we provide links to articles that discuss the relative merits of smartphone encryption on different brands and platforms.
 
 ## Instant Messaging
 
