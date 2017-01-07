@@ -1,0 +1,13 @@
+
+
+a {
+  $color: #20c;
+
+  color: $color;
+  text-decoration: none;
+  transition: color 0.25s;
+
+  &:hover {
+    color: lighten($color, 10%);
+  }
+}

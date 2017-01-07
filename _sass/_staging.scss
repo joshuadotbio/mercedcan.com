@@ -42,10 +42,6 @@ body {
   }
 }
 
-.layer {
-  @extend %vpad;
-}
-
 .layer-inside {
   @include container();
 }
@@ -144,50 +140,4 @@ body {
   @include container(800px);
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.post-listings {
-  margin-top: 1rem;
-  @include container();
-  padding-bottom: 10em;
-}
-
-.post-listing {
-  margin-bottom: 1rem;
-  font-family: "proxima-nova-condensed", sans-serif;
-
-  @include breakpoint(bp(iPhone6_l)) {
-    padding: 0.5rem;
-  }
-
-  h1 {
-    margin: 0;
-    a {
-      color: inherit;
-      &:hover {
-        color: inherit;
-      }
-    }
-  }
-}
-
-.post-listing-inner {
-  $border: 1px solid darken(white,10%);
-  padding: 2em 1rem;
-  background: white;
-  border-top: $border;
-  border-bottom: $border;
-  transition: box-shadow 0.10s;
-  cursor: pointer;
-
-  @include breakpoint(bp(iPhone6_l)) {
-    padding: 3em 2rem;
-    border-radius: 0.25rem;
-    border: $border;
-    box-shadow: $shadow1;
-  }
-
-  &:hover {
-    @extend %shadow3;
-  }
 }

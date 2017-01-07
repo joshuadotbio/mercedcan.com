@@ -6,11 +6,22 @@ $breakpoints: (
   iPadAir_p: 768px,
   iPadAir_l: 1024px,
   laptop: 1440px,
-  container: 1024px
+  container: 1200px
 );
 
 $z: (
   England: -9999
+);
+
+$padding: (
+  default: 1rem,
+  iPhone5_p: 1rem,
+  iPhone6_p: 1rem,
+  iPhone5_l: 1rem,
+  iPhone6_l: 2rem,
+  iPadAir_p: 3rem,
+  iPadAir_l: 3rem,
+  laptop: 3rem
 );
 
 $susy: (
@@ -21,7 +32,7 @@ $susy: (
   container: bp(container),
   container-position: center,
   columns: 12,
-  gutters: 0,
+  gutters: 0.25,
   column-width: false,
   global-box-sizing: border-box,
   last-flow: to
@@ -33,4 +44,11 @@ $c3: rgba(184, 12, 9, 1);
 $c4: rgba(65, 41, 44, 1);
 $c5: rgba(251, 251, 255, 1);
 
+$link-color: #20c;
+$link-hover: lighten($link-color, 10%);
+
 $shadow1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$shadow3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$shadow4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$shadow5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
