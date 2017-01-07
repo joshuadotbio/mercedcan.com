@@ -1,0 +1,48 @@
+.layer {
+  //
+}
+
+.container {
+  @include container();
+}
+
+.card {
+  $border: 1px solid #dfdfdf;
+  $border-radius: 0.25em;
+  $background: white;
+
+  border-top: $border;
+  border-bottom: $border;
+  background: $background;
+  padding: padding(default);
+
+  @include breakpoint(bp(iPhone6_l)) {
+    border: $border;
+    border-radius: $border-radius;
+    padding: padding(iPhone6_l);
+  }
+
+  @include breakpoint(bp(iPadAir_l)) {
+    padding: padding(iPadAir_l);
+  }
+
+  &.m-hover {
+    @include breakpoint(bp(iPhone6_l)) {
+      cursor: pointer;
+      transition: box-shadow 0.25s;
+      &:hover {
+        box-shadow: $shadow3;
+      }
+    }
+  }
+
+}
+
+.m-flushTop {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.m-lightGray {
+  background: #efefef;
+}

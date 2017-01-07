@@ -7,7 +7,7 @@
 {% include js/md5.min.js %}
 
 $(function() {
-  $('.post-listing').click(function() {
+  $('.j-href').click(function() {
     window.location = this.getAttribute("href");
   });
 });

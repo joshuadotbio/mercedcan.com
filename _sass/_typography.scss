@@ -1,24 +1,19 @@
 
 
-body {
-  font-family: 'freight-text-pro', serif;
-}
+$sans: 'proxima-nova-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+$serif: 'freight-text-pro', serif;
 
-.post {
-  padding-bottom: 10em;
+body {
+  font-family: $serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'proxima-nova-condensed', sans-serif;
+  font-family: $sans;
   margin: 0.85em 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 .dropcap {
-  font-family: 'freight-text-pro', serif;
+  font-family: $serif;
   margin-right: 0.05em;
 }
 

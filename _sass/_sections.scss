@@ -1,0 +1,8 @@
+
+
+.featured-pages {
+  @include span(12);
+  @include breakpoint(bp(iPhone6_l)) {
+    @include span(8);
+  }
+}
