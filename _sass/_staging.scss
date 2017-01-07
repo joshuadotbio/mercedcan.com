@@ -42,10 +42,6 @@ body {
   }
 }
 
-.layer {
-  @extend %vpad;
-}
-
 .layer-inside {
   @include container();
 }

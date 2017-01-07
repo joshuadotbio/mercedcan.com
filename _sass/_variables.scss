@@ -6,7 +6,7 @@ $breakpoints: (
   iPadAir_p: 768px,
   iPadAir_l: 1024px,
   laptop: 1440px,
-  container: 1024px
+  container: 1200px
 );
 
 $z: (
@@ -32,7 +32,7 @@ $susy: (
   container: bp(container),
   container-position: center,
   columns: 12,
-  gutters: 0,
+  gutters: 0.1,
   column-width: false,
   global-box-sizing: border-box,
   last-flow: to

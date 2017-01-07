@@ -5,8 +5,14 @@ layout: default
 <div class="layer m-lightGray">
 
   <div class="container">
-    <section class="featured-pages">
 
+    <section class="sidebar">
+      <div class="card">
+        {% include mailchimp-form.html %}
+      </div>
+    </section>
+
+    <section class="featured-pages">
       {% for post in site.posts limit:5 %}
 
       <article class="card m-hover j-href" href="{{ post.url }}">
@@ -19,8 +25,8 @@ layout: default
       </article>
 
       {% endfor %}
-
     </section>
+
   </div>
 
   <div class="placeholder">

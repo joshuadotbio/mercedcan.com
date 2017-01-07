@@ -1,5 +1,16 @@
 .layer {
-  //
+  padding-top: padding(default);
+  padding-bottom: padding(default);
+
+  @include breakpoint(bp(iPhone6_l)) {
+    padding-top: padding(iPhone6_l);
+    padding-bottom: padding(iPhone6_l);
+  }
+
+  @include breakpoint(bp(iPadAir_l)) {
+    padding-top: padding(iPadAir_l);
+    padding-bottom: padding(iPadAir_l);
+  }
 }
 
 .container {
@@ -10,9 +21,11 @@
   $border: 1px solid #dfdfdf;
   $border-radius: 0.25em;
   $background: white;
+  $margin: 1em;
 
   border-top: $border;
   border-bottom: $border;
+  margin-bottom: $margin;
   background: $background;
   padding: padding(default)*2 padding(default);
 
