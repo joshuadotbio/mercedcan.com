@@ -30,23 +30,33 @@
   padding: padding(default)*2 padding(default);
 
   @include breakpoint(bp(iPhone6_l)) {
-    border: $border;
-    border-radius: $border-radius;
     padding: padding(iPhone6_l);
   }
 
   @include breakpoint(bp(iPadAir_l)) {
+    border: $border;
+    border-radius: $border-radius;
     padding: padding(iPadAir_l);
   }
 
   &.m-hover {
-    @include breakpoint(bp(iPhone6_l)) {
+    @include breakpoint(bp(iPadAir_l)) {
       cursor: pointer;
       transition: box-shadow 0.25s;
       &:hover {
         box-shadow: $shadow3;
       }
     }
+  }
+
+  &.m-red {
+    background: $c3;
+    color: white;
+  }
+
+  &.m-green {
+    background: $c1;
+    color: white;
   }
 }
 
@@ -69,4 +79,44 @@
 
 .m-lightGray {
   background: #efefef;
+}
+
+.text-input-group {
+  margin-bottom: 1rem;
+
+  input {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.15rem 0.25rem;
+    background: white;
+    border-radius: 0.25em;
+    outline: 0;
+    border: 1px solid #777;
+    font-family: $sans;
+  }
+
+  .example {
+    color: #ddd;
+    display: inline-block;
+    padding: 0.15em 0;
+  }
+}
+
+.button {
+  outline: 0;
+  border: none;
+  background: $link-color;
+  padding: 0.75rem 1rem;
+  color: white;
+  font-family: $sans;
+  transition: box-shadow 0.15s;
+
+  &:hover {
+    background: $link-hover;
+    box-shadow: $shadow3;
+  }
+
+  &.m-expanded {
+    width: 100%;
+  }
 }

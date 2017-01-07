@@ -3,6 +3,7 @@
 
 {% include js/jquery-3.1.1.min.js %}
 {% include js/moment.min.js %}
+{% include js/jquery.validate.min.js %}
 {% include js/dropcap.min.js %}
 {% include js/md5.min.js %}
 

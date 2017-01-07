@@ -3,28 +3,6 @@
 $sans: 'proxima-nova-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
 $serif: 'freight-text-pro', serif;
 
-body {
-  font-family: $serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $sans;
-  margin: 1em 0 0.5em 0;
-}
-
-.dropcap {
-  font-family: $serif;
-  margin-right: 0.05em;
-}
-
-.notice {
-  font-family: $sans;
-}
-
-small {
-  font-family: $sans;
-}
-
 $ms-base: 1em;
 $ms-ratio: 1.125;
 $ms-fluid: true;
@@ -102,14 +80,41 @@ h3, .h3 {@include typi($h3-map);}
 h4, .h4 {@include typi($h4-map);}
 h5, .h5 {@include typi($h5-map);}
 h6, .h6 {@include typi($h6-map);}
-p {@include typi($p-map);}
-small {@include typi($small-map);}
+p, .p {@include typi($p-map);}
+small, .small {@include typi($small-map);}
+
+body {
+  font-family: $serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
+  margin: 1em 0 0.5em 0;
+}
+
+.dropcap {
+  font-family: $serif;
+  margin-right: 0.05em;
+}
+
+.notice {
+  font-family: $sans;
+  @include typi($small-map);
+}
+
+.text-input-group {
+  font-family: $sans;
+
+  input {
+    @include typi($p-map);
+  }
+}
+
+small {
+  font-family: $sans;
+}
 
 .site-name {
   @include typi($site-name-map);
   font-weight: bold;
-}
-
-.notice {
-  @include typi($small-map);
 }

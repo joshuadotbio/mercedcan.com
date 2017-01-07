@@ -3,7 +3,7 @@
 .featured-pages {
   @include span(12);
 
-  @include breakpoint(bp(iPhone6_l)) {
+  @include breakpoint(bp(iPadAir_l)) {
     @include span(8);
   }
 }
@@ -11,7 +11,7 @@
 .sidebar {
   @include span(12);
 
-  @include breakpoint(bp(iPhone6_l)) {
+  @include breakpoint(bp(iPadAir_l)) {
     @include span(4);
     float: right;
   }
