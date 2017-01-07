@@ -14,7 +14,7 @@
   border-top: $border;
   border-bottom: $border;
   background: $background;
-  padding: padding(default);
+  padding: padding(default)*2 padding(default);
 
   @include breakpoint(bp(iPhone6_l)) {
     border: $border;
