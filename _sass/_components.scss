@@ -35,7 +35,18 @@
       }
     }
   }
+}
 
+.notice {
+  $background: #eee;
+
+  padding: padding(default)/2;
+  background: $background;
+  border: 1px solid darken($background, 10%);
+
+  @include breakpoint(bp(iPhone6_l)) {
+    padding: padding(default);
+  }
 }
 
 .m-flushTop {

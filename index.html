@@ -3,22 +3,29 @@ layout: default
 ---
 {% include masthead.html %}
 <div class="layer m-lightGray">
+
   <div class="container">
     <section class="featured-pages">
+
       {% for post in site.posts limit:5 %}
+
       <article class="card m-hover j-href" href="{{ post.url }}">
-        <h1 class="h3 m-flushTop"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <h1 class="h3 m-flushTop m-flushBottom"><a href="{{ post.url }}">{{ post.title }}</a></h1>
         {% if post.notice %}
         <aside class="notice">{{ post.notice }}</aside>
         {% endif %}
         <p>{{ post.description }}</p>
         <small>Published on {{ post.date | date: "%Y %B %-d" }}{% if post.category %} under {{ post.category | capitalize }}{% endif %}</small>
       </article>
+
       {% endfor %}
-      <div class="placeholder">
-        <h1>We're still busy writing!</h1>
-        <p>Please check back again soon.</p>
-      </div>
+
     </section>
   </div>
+
+  <div class="placeholder">
+    <h1>We're still busy writing!</h1>
+    <p>Please check back again soon.</p>
+  </div>
+
 </div>

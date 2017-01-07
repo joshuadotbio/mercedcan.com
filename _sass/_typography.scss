@@ -9,12 +9,20 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $sans;
-  margin: 0.85em 0;
+  margin: 1em 0 0.5em 0;
 }
 
 .dropcap {
   font-family: $serif;
   margin-right: 0.05em;
+}
+
+.notice {
+  font-family: $sans;
+}
+
+small {
+  font-family: $sans;
 }
 
 $ms-base: 1em;
@@ -102,6 +110,6 @@ small {@include typi($small-map);}
   font-weight: bold;
 }
 
-.card-title {
-  @include typi($card-title-map);
+.notice {
+  @include typi($small-map);
 }
