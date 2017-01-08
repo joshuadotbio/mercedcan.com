@@ -2,7 +2,7 @@
 layout: statement
 author: Sylvia Smith
 date: 2017-01-07
-order: 5
+order: 3
 seo_title: Statement by Sylvia Smith
 seo_description:
 facebook_image:

@@ -2,7 +2,7 @@
 layout: statement
 author: Adam Martinez
 date: 2017-01-07
-order: 3
+order: 4
 seo_title: Statement by Adam Martinez
 seo_description:
 facebook_image:

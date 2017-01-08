@@ -2,7 +2,7 @@
 layout: statement
 author: Anonymous
 date: 2017-01-07
-order: 4
+order: 5
 seo_title: Statement by an anonymous Merced community member
 seo_description:
 facebook_image:
