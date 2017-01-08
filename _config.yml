@@ -17,7 +17,7 @@ title: Merced Collective Action Network
 email: hey@mercedcan.com
 description: We defend progressive values in policymaking at the local, state, and federal levels.
 baseurl: ""
-url: ""
+url: "http://mercedcan.com"
 twitter_username: jekyllrb
 github_username: jekyll
 permalink: /:title
