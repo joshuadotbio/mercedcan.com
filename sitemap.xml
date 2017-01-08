@@ -1,0 +1,10 @@
+---
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for item in site.posts %}
+  <url>
+    <loc>{{ item.url | prepend: site.baseurl | prepend: site.url }}</loc>
+    {% if item.modification_date %}<lastmod>{{ item.modification_date | date: "%Y-%m-%d"  }}</lastmod>{% elsif item.date %}<lastmod>{{ item.date | date: "%Y-%m-%d"  }}</lastmod>{% endif %}
+  </url>{% endfor %}
+</urlset>
