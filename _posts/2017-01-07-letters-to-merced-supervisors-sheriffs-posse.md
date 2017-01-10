@@ -1,9 +1,9 @@
 ---
 layout: post-with-statements
 title: We are against public funding for the Sheriff's Posse's inaugural display
-description: We have compiled statements from Merced community members regarding their thoughts on this planned action by the Merced County Board of Supervisors.
+description: We have compiled statements from Merced community members in response to Merced County Supervisors' plan to give $10,000 in public funding to the Sheriff's Posse.
 seo_title:
-seo_description:
+seo_description: Statements from Merced community members in response to Merced County Supervisors' plan to give $10,000 in public funding to the Sheriff's Posse.
 facebook_image:
 notice: This page was updated on January 9, 2017.
 ---
